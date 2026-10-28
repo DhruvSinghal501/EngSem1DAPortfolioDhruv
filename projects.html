@@ -3,108 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Dhruv Singhal</title>
+  <title>Projects & Stories | Dhruv Singhal</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between">
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
 
   <!-- Navigation -->
   <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
     <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-      <span class="text-xl font-bold tracking-tight text-white">Dhruv Singhal</span>
+      <a href="index.html" class="text-xl font-bold tracking-tight text-white hover:text-indigo-400 transition">Dhruv Singhal</a>
       <nav class="space-x-6 text-sm font-medium">
-        <a href="index.html" class="text-slate-400 hover:text-white transition">The Hub</a>
-        <a href="projects.html" class="text-indigo-400 border-b-2 border-indigo-400 pb-1">Systems & Projects</a>
-        <a href="philosophy.html" class="text-slate-400 hover:text-white transition">Mindset & Ethos</a>
+        <a href="index.html" class="text-slate-400 hover:text-white transition">Home</a>
+        <a href="projects.html" class="text-indigo-400 border-b-2 border-indigo-400 pb-1">Projects & Stories</a>
+        <a href="philosophy.html" class="text-slate-400 hover:text-white transition">How I Think</a>
       </nav>
     </div>
   </header>
 
   <!-- Main Content -->
-  <main class="max-w-5xl mx-auto px-6 py-12 flex-grow space-y-10">
+  <main class="max-w-5xl mx-auto px-6 py-12 flex-grow space-y-12">
     
     <div>
-      <h1 class="text-3xl font-extrabold text-white">Curated Engineering Projects</h1>
-      <p class="text-slate-400 text-sm mt-1">Focusing strictly on custom systems architecture, efficiency, and real-world utility.</p>
+      <h1 class="text-3xl font-extrabold text-white">Projects Built from Real Experiences</h1>
+      <p class="text-slate-400 text-sm mt-2 max-w-2xl">
+        I don't build generic projects just to fill up a resume. Every tool here started because I ran into a personal headache or noticed a stupid inefficiency that needed fixing.
+      </p>
     </div>
 
     <!-- Project 1: Nexus -->
-    <article class="bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden grid md:grid-cols-12 gap-6 p-6">
+    <article class="bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden grid lg:grid-cols-12 gap-6 p-6 sm:p-8">
       
-      <!-- Visual Block / Diagram Placeholder -->
-      <div class="md:col-span-5 bg-slate-950 border border-slate-800 rounded-xl p-6 flex flex-col justify-center items-center text-center space-y-3">
-        <div class="w-16 h-16 rounded-full bg-indigo-950 border border-indigo-700/50 flex items-center justify-center text-indigo-400 font-mono text-xl font-bold">
-          99.9%
-        </div>
-        <span class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Payload Reduction</span>
-        <p class="text-xs text-slate-500">Visual System Architecture Representation</p>
+      <!-- Visual Graph Diagram for Nexus -->
+      <div class="lg:col-span-5 bg-slate-950 border border-slate-800 rounded-xl p-6 flex flex-col items-center justify-center space-y-4">
+        <svg class="w-full h-40 text-indigo-400" viewBox="0 0 240 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Full File Bloat vs Delta Patch -->
+          <rect x="10" y="20" width="70" height="80" rx="6" stroke="#475569" stroke-dasharray="3 3" fill="#0f172a"/>
+          <text x="45" y="55" fill="#64748b" font-size="9" text-anchor="middle">50GB Full</text>
+          <text x="45" y="70" fill="#64748b" font-size="9" text-anchor="middle">Game File</text>
+
+          <path d="M 90 60 L 140 60" stroke="#6366f1" stroke-width="2" marker-end="url(#arrow)"/>
+          
+          <rect x="150" y="40" width="80" height="40" rx="6" fill="#1e1b4b" stroke="#818cf8"/>
+          <text x="190" y="58" fill="#a5b4fc" font-size="10" font-weight="bold" text-anchor="middle">Nexus Delta</text>
+          <text x="190" y="72" fill="#38bdf8" font-size="9" text-anchor="middle">50KB Key Patch</text>
+        </svg>
+        <span class="text-xs font-mono text-indigo-300 bg-indigo-950/80 px-3 py-1 rounded-full border border-indigo-800">
+          99.9% Payload Reduction
+        </span>
       </div>
 
       <!-- Content Block -->
-      <div class="md:col-span-7 space-y-4">
-        <div class="flex items-center justify-between">
-          <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Code2Create Winner — Best Freshers Project</span>
-          <span class="text-xs text-slate-500 font-mono">Python / JSON Engine</span>
+      <div class="lg:col-span-7 space-y-4">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Code2Create Winner (Best Freshers Project)</span>
+          <span class="text-xs text-slate-500 font-mono">Python / JSON Structural Patching</span>
         </div>
 
         <h2 class="text-2xl font-bold text-white">Nexus Semantic Delta Patching Engine</h2>
         
-        <p class="text-sm text-slate-300 leading-relaxed">
-          Designed to solve local storage updates bloat on gaming consoles (such as Xbox local drives). Instead of forcing massive, monolithic payload downloads for minor content shifts, Nexus utilizes a structure-aware key-value patch model to isolate exact edits locally.
-        </p>
+        <div class="space-y-3 text-sm text-slate-300 leading-relaxed">
+          <p>
+            <strong class="text-white">Why I built it:</strong> I got sick of turning on my Xbox One S to play a game, only to be hit with a mandatory 40GB update for a minor patch or seasonal tweak. It takes up local storage, wastes internet bandwidth, and stops you from actually playing. 
+          </p>
+          <p>
+            <strong class="text-white">How it works:</strong> Most game engines overwrite giant files when making small updates. Nexus breaks data down into a structure-aware key-value tree. Instead of re-downloading the entire asset bundle, it surgically calculates the exact JSON keys that changed and patches only those key-value pairs locally.
+          </p>
+        </div>
 
-        <div class="bg-slate-950/60 p-4 rounded-lg border border-slate-800 space-y-2">
-          <h3 class="text-xs font-bold text-slate-400 uppercase">Key Technical Specifications</h3>
-          <ul class="text-xs text-slate-300 space-y-1 list-disc list-inside">
-            <li>Surgical key-value update isolation preventing line-offset payload cascades.</li>
-            <li>Reduces local update bandwidth consumption by up to 99.9%.</li>
-            <li>Eliminates full-file overwrites in live game update operations.</li>
-          </ul>
+        <div class="bg-slate-950/60 p-4 rounded-lg border border-slate-800/80 space-y-1">
+          <div class="text-xs font-bold text-slate-400 uppercase">Key Results</div>
+          <div class="text-xs text-slate-300">Reduced local patch payloads from gigabytes down to kilobytes without corrupting file line offsets.</div>
         </div>
       </div>
     </article>
 
     <!-- Project 2: BrickOwl Scraper -->
-    <article class="bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden grid md:grid-cols-12 gap-6 p-6">
+    <article class="bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden grid lg:grid-cols-12 gap-6 p-6 sm:p-8">
       
-      <!-- Visual Block / Diagram Placeholder -->
-      <div class="md:col-span-5 bg-slate-950 border border-slate-800 rounded-xl p-6 flex flex-col justify-center items-center text-center space-y-3">
-        <div class="w-16 h-16 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-slate-300 font-mono text-xl font-bold">
-          Graph
-        </div>
-        <span class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Relational Data Model</span>
-        <p class="text-xs text-slate-500">Ethical Rate-Limited Scraper</p>
+      <!-- Visual Graph Diagram for BrickOwl -->
+      <div class="lg:col-span-5 bg-slate-950 border border-slate-800 rounded-xl p-6 flex flex-col items-center justify-center space-y-4">
+        <svg class="w-full h-40" viewBox="0 0 240 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Graph Nodes -->
+          <circle cx="50" cy="60" r="16" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+          <text x="50" y="64" fill="#38bdf8" font-size="9" font-weight="bold" text-anchor="middle">Set</text>
+
+          <line x1="66" y1="60" x2="114" y2="35" stroke="#475569" stroke-width="1.5"/>
+          <line x1="66" y1="60" x2="114" y2="85" stroke="#475569" stroke-width="1.5"/>
+
+          <circle cx="130" cy="35" r="14" fill="#0f172a" stroke="#818cf8" stroke-width="1.5"/>
+          <text x="130" y="38" fill="#a5b4fc" font-size="8" text-anchor="middle">Part A</text>
+
+          <circle cx="130" cy="85" r="14" fill="#0f172a" stroke="#818cf8" stroke-width="1.5"/>
+          <text x="130" y="88" fill="#a5b4fc" font-size="8" text-anchor="middle">Part B</text>
+
+          <line x1="144" y1="35" x2="186" y2="35" stroke="#475569" stroke-width="1.5"/>
+          <circle cx="196" cy="35" r="10" fill="#1e293b" stroke="#64748b"/>
+          <text x="196" y="38" fill="#94a3b8" font-size="7" text-anchor="middle">Color</text>
+        </svg>
+        <span class="text-xs font-mono text-slate-300 bg-slate-900 px-3 py-1 rounded-full border border-slate-800">
+          Relational Graph Catalog
+        </span>
       </div>
 
       <!-- Content Block -->
-      <div class="md:col-span-7 space-y-4">
-        <div class="flex items-center justify-between">
-          <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Inventory & Cataloging Tool</span>
-          <span class="text-xs text-slate-500 font-mono">Python / Data Modeling</span>
+      <div class="lg:col-span-7 space-y-4">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Inventory & Cataloging System</span>
+          <span class="text-xs text-slate-500 font-mono">Python / Data Scraping</span>
         </div>
 
         <h2 class="text-2xl font-bold text-white">BrickOwl Relational Inventory Scraper</h2>
         
-        <p class="text-sm text-slate-300 leading-relaxed">
-          An automated extraction engine designed for hobbyist inventory tracking. It parses complex relational element listings while strictly adhering to server rate limits and architectural bandwidth guidelines.
-        </p>
+        <div class="space-y-3 text-sm text-slate-300 leading-relaxed">
+          <p>
+            <strong class="text-white">Why I built it:</strong> As an avid LEGO collector managing sets and custom builds, tracking down individual part IDs across thousands of categories manually was painfully slow. Third-party sites didn't offer a clean way to pull relational data for personal inventory tracking.
+          </p>
+          <p>
+            <strong class="text-white">How it works:</strong> I designed an ethical web scraper that respects server bandwidth limits using rate-limiting algorithms. It extracts complex element catalogs from BrickOwl and structures them into a clean relational graph model (Set -> Part -> Color -> Element ID), making custom collection analysis easy.
+          </p>
+        </div>
 
-        <div class="bg-slate-950/60 p-4 rounded-lg border border-slate-800 space-y-2">
-          <h3 class="text-xs font-bold text-slate-400 uppercase">Key Technical Specifications</h3>
-          <ul class="text-xs text-slate-300 space-y-1 list-disc list-inside">
-            <li>Ethical request pacing with exponential backoff algorithm.</li>
-            <li>Relational mapping of multi-part inventory catalogs.</li>
-            <li>Structured graph-ready data output for downstream analytics.</li>
-          </ul>
+        <div class="bg-slate-950/60 p-4 rounded-lg border border-slate-800/80 space-y-1">
+          <div class="text-xs font-bold text-slate-400 uppercase">Key Features</div>
+          <div class="text-xs text-slate-300">Exponential backoff pacing, clean node-edge data mapping, and zero server strain.</div>
         </div>
       </div>
     </article>
 
   </main>
 
-  <!-- Footer -->
   <footer class="border-t border-slate-900 bg-slate-950 py-6 text-center text-xs text-slate-500">
-    © 2026 Dhruv Singhal. Built for Web Development Portfolio Submission.
+    © 2026 Dhruv Singhal. Built thoughtfully for portfolio review.
   </footer>
 
 </body>
