@@ -6,16 +6,16 @@
   <title>Dhruv Singhal | Systems & Game Engineering</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between">
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
 
   <!-- Navigation -->
   <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
     <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-      <span class="text-xl font-bold tracking-tight text-white">Dhruv Singhal</span>
+      <a href="index.html" class="text-xl font-bold tracking-tight text-white hover:text-indigo-400 transition">Dhruv Singhal</a>
       <nav class="space-x-6 text-sm font-medium">
-        <a href="index.html" class="text-indigo-400 border-b-2 border-indigo-400 pb-1">The Hub</a>
-        <a href="projects.html" class="text-slate-400 hover:text-white transition">Systems & Projects</a>
-        <a href="philosophy.html" class="text-slate-400 hover:text-white transition">Mindset & Ethos</a>
+        <a href="index.html" class="text-indigo-400 border-b-2 border-indigo-400 pb-1">Home</a>
+        <a href="projects.html" class="text-slate-400 hover:text-white transition">Projects & Stories</a>
+        <a href="philosophy.html" class="text-slate-400 hover:text-white transition">How I Think</a>
       </nav>
     </div>
   </header>
@@ -23,69 +23,71 @@
   <!-- Main Content -->
   <main class="max-w-5xl mx-auto px-6 py-12 flex-grow space-y-12">
     
-    <!-- Hero / Header Section -->
-    <section class="space-y-4">
+    <!-- Hero / Personal Intro -->
+    <section class="space-y-6">
       <div class="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-wider text-indigo-400">
-        <span class="bg-indigo-950/60 border border-indigo-800/50 px-3 py-1 rounded-full">B.Tech CSE Core @ VIT Vellore</span>
+        <span class="bg-indigo-950/60 border border-indigo-800/50 px-3 py-1 rounded-full">1st Year CSE @ VIT Vellore</span>
         <span class="bg-slate-800 border border-slate-700 px-3 py-1 rounded-full text-slate-300">Targeting AAA Game Dev & Systems</span>
       </div>
-      <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
-        Engineering low-level software, structure-aware algorithms, and efficient data architecture.
-      </h1>
-      <p class="text-slate-400 text-lg max-w-3xl leading-relaxed">
-        Focusing on low-level optimization, memory footprint reduction, and custom systems tooling. Driven by a disciplined approach to problem-solving and software efficiency.
-      </p>
       
-      <!-- Contact & Link Pills (Non-clickable/Display placeholders per rubric constraints) -->
-      <div class="flex flex-wrap gap-4 pt-2 text-sm text-slate-300">
-        <span class="bg-slate-900 border border-slate-800 px-4 py-2 rounded-lg">Email: dhruvsinghal@vit.ac.in</span>
-        <span class="bg-slate-900 border border-slate-800 px-4 py-2 rounded-lg">LinkedIn: linkedin.com/in/dhruv-singhal</span>
-        <span class="bg-slate-900 border border-slate-800 px-4 py-2 rounded-lg">GitHub: github.com/dhruv-singhal</span>
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+        Hi, I'm Dhruv. I build software when existing tools feel slow, bloated, or poorly designed.
+      </h1>
+      
+      <p class="text-slate-300 text-lg max-w-3xl leading-relaxed font-light">
+        I’m an analytical, calm, and observant systems thinker. I don’t like bloat—whether it's in software update sizes, unoptimized algorithms, or everyday workflow friction. My goal is to work in low-level systems engineering and game engine development at studios like Respawn and EA.
+      </p>
+
+      <!-- Contact Info -->
+      <div class="flex flex-wrap gap-3 pt-2 text-xs font-mono text-slate-400">
+        <span class="bg-slate-900 border border-slate-800 px-3 py-2 rounded-md">dhruvsinghal@vit.ac.in</span>
+        <span class="bg-slate-900 border border-slate-800 px-3 py-2 rounded-md">LinkedIn: /in/dhruv-singhal</span>
+        <span class="bg-slate-900 border border-slate-800 px-3 py-2 rounded-md">GitHub: @dhruv-singhal</span>
       </div>
     </section>
 
-    <!-- Target Role & Responsibilities Card -->
-    <section class="bg-slate-900/60 border border-slate-800 rounded-xl p-6 space-y-4">
-      <h2 class="text-xs uppercase font-bold tracking-widest text-slate-400">Target Position & Career Trajectory</h2>
+    <!-- Career Trajectory & Roles -->
+    <section class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-4">
+      <h2 class="text-xs uppercase font-bold tracking-widest text-indigo-400">What I'm Aiming For</h2>
       <div class="grid md:grid-cols-2 gap-6">
         <div>
           <h3 class="text-lg font-bold text-white mb-2">Target Roles</h3>
           <p class="text-sm text-slate-300 leading-relaxed">
-            Gameplay Programmer / Systems Engineer in AAA Game Development & Real-Time Interactive Systems (e.g., Respawn Entertainment, EA).
+            Systems Programmer, Gameplay Engineer, or Technical Engine Director in interactive real-time environments and AAA game development.
           </p>
         </div>
         <div>
-          <h3 class="text-lg font-bold text-white mb-2">Core Responsibilities Focus</h3>
+          <h3 class="text-lg font-bold text-white mb-2">My Engineering Focus</h3>
           <p class="text-sm text-slate-300 leading-relaxed">
-            Architecting local storage update optimizations, low-level data structures, state synchronization, and algorithmic execution efficiency.
+            Reducing memory overhead, optimizing key-value state handling, low-level data structures, and crafting clean, reliable architecture.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Theoretical Foundations & Technical Skills Block -->
+    <!-- Core Theoretical Foundations & Personal Traits -->
     <section class="space-y-6">
-      <h2 class="text-xs uppercase font-bold tracking-widest text-slate-400">Theoretical Foundations & Core Competencies</h2>
+      <h2 class="text-xs uppercase font-bold tracking-widest text-slate-400">My Foundation & Mindset</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         
         <div class="bg-slate-900 border border-slate-800 p-5 rounded-xl space-y-2">
-          <h3 class="font-bold text-indigo-400">Theoretical CS</h3>
-          <p class="text-xs text-slate-400 leading-relaxed">
-            Algorithmic complexity ($O(n)$ time/space trade-offs), discrete mathematics, logic structures, and graph data modeling.
+          <div class="text-indigo-400 text-sm font-bold">Perceptive & Analytical</div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            I naturally look for underlying patterns and inefficiencies—whether analyzing chess positions, studying math, or dissecting how software breaks.
           </p>
         </div>
 
         <div class="bg-slate-900 border border-slate-800 p-5 rounded-xl space-y-2">
-          <h3 class="font-bold text-indigo-400">Systems & Data Optimization</h3>
-          <p class="text-xs text-slate-400 leading-relaxed">
-            JSON key-value serialization, low-level delta patching, memory bloat mitigation, and rate-limited web scraping.
+          <div class="text-indigo-400 text-sm font-bold">Theoretical CS & Math</div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Solid grounding in multivariable calculus, graph theory, discrete structures, and algorithmic complexity ($O(n)$ optimization).
           </p>
         </div>
 
         <div class="bg-slate-900 border border-slate-800 p-5 rounded-xl space-y-2">
-          <h3 class="font-bold text-indigo-400">Development Stack</h3>
-          <p class="text-xs text-slate-400 leading-relaxed">
-            Python, C/C++, GNU Octave, Data Structures & Algorithms, Linux/Unix environments, Git version control.
+          <div class="text-indigo-400 text-sm font-bold">Quiet Discipline</div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            I prefer long-form reading, steady problem-solving, and thoughtful design over chasing trends or rushing half-baked solutions.
           </p>
         </div>
 
@@ -94,9 +96,8 @@
 
   </main>
 
-  <!-- Footer -->
   <footer class="border-t border-slate-900 bg-slate-950 py-6 text-center text-xs text-slate-500">
-    © 2026 Dhruv Singhal. Built for Web Development Portfolio Submission.
+    © 2026 Dhruv Singhal. Built thoughtfully for portfolio review.
   </footer>
 
 </body>
