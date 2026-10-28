@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Dhruv Singhal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between">
+
+  <!-- Navigation -->
+  <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+      <span class="text-xl font-bold tracking-tight text-white">Dhruv Singhal</span>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="index.html" class="text-slate-400 hover:text-white transition">The Hub</a>
+        <a href="projects.html" class="text-indigo-400 border-b-2 border-indigo-400 pb-1">Systems & Projects</a>
+        <a href="philosophy.html" class="text-slate-400 hover:text-white transition">Mindset & Ethos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto px-6 py-12 flex-grow space-y-10">
+    
+    <div>
+      <h1 class="text-3xl font-extrabold text-white">Curated Engineering Projects</h1>
+      <p class="text-slate-400 text-sm mt-1">Focusing strictly on custom systems architecture, efficiency, and real-world utility.</p>
+    </div>
+
+    <!-- Project 1: Nexus -->
+    <article class="bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden grid md:grid-cols-12 gap-6 p-6">
+      
+      <!-- Visual Block / Diagram Placeholder -->
+      <div class="md:col-span-5 bg-slate-950 border border-slate-800 rounded-xl p-6 flex flex-col justify-center items-center text-center space-y-3">
+        <div class="w-16 h-16 rounded-full bg-indigo-950 border border-indigo-700/50 flex items-center justify-center text-indigo-400 font-mono text-xl font-bold">
+          99.9%
+        </div>
+        <span class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Payload Reduction</span>
+        <p class="text-xs text-slate-500">Visual System Architecture Representation</p>
+      </div>
+
+      <!-- Content Block -->
+      <div class="md:col-span-7 space-y-4">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Code2Create Winner — Best Freshers Project</span>
+          <span class="text-xs text-slate-500 font-mono">Python / JSON Engine</span>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white">Nexus Semantic Delta Patching Engine</h2>
+        
+        <p class="text-sm text-slate-300 leading-relaxed">
+          Designed to solve local storage updates bloat on gaming consoles (such as Xbox local drives). Instead of forcing massive, monolithic payload downloads for minor content shifts, Nexus utilizes a structure-aware key-value patch model to isolate exact edits locally.
+        </p>
+
+        <div class="bg-slate-950/60 p-4 rounded-lg border border-slate-800 space-y-2">
+          <h3 class="text-xs font-bold text-slate-400 uppercase">Key Technical Specifications</h3>
+          <ul class="text-xs text-slate-300 space-y-1 list-disc list-inside">
+            <li>Surgical key-value update isolation preventing line-offset payload cascades.</li>
+            <li>Reduces local update bandwidth consumption by up to 99.9%.</li>
+            <li>Eliminates full-file overwrites in live game update operations.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 2: BrickOwl Scraper -->
+    <article class="bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden grid md:grid-cols-12 gap-6 p-6">
+      
+      <!-- Visual Block / Diagram Placeholder -->
+      <div class="md:col-span-5 bg-slate-950 border border-slate-800 rounded-xl p-6 flex flex-col justify-center items-center text-center space-y-3">
+        <div class="w-16 h-16 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-slate-300 font-mono text-xl font-bold">
+          Graph
+        </div>
+        <span class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Relational Data Model</span>
+        <p class="text-xs text-slate-500">Ethical Rate-Limited Scraper</p>
+      </div>
+
+      <!-- Content Block -->
+      <div class="md:col-span-7 space-y-4">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Inventory & Cataloging Tool</span>
+          <span class="text-xs text-slate-500 font-mono">Python / Data Modeling</span>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white">BrickOwl Relational Inventory Scraper</h2>
+        
+        <p class="text-sm text-slate-300 leading-relaxed">
+          An automated extraction engine designed for hobbyist inventory tracking. It parses complex relational element listings while strictly adhering to server rate limits and architectural bandwidth guidelines.
+        </p>
+
+        <div class="bg-slate-950/60 p-4 rounded-lg border border-slate-800 space-y-2">
+          <h3 class="text-xs font-bold text-slate-400 uppercase">Key Technical Specifications</h3>
+          <ul class="text-xs text-slate-300 space-y-1 list-disc list-inside">
+            <li>Ethical request pacing with exponential backoff algorithm.</li>
+            <li>Relational mapping of multi-part inventory catalogs.</li>
+            <li>Structured graph-ready data output for downstream analytics.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-900 bg-slate-950 py-6 text-center text-xs text-slate-500">
+    © 2026 Dhruv Singhal. Built for Web Development Portfolio Submission.
+  </footer>
+
+</body>
+</html>
